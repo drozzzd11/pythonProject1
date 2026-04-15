@@ -3,7 +3,6 @@ den = int(input())
 class Rational:
     pass
 
-
 def create(num, den):
     res = Rational()
     if den == 0:
@@ -57,6 +56,13 @@ def compare(k,n):
 def to_int(r):
     divised = r.numer / r.denom
     return int(divised)
+
+def to_float(r):
+    return float(r.numer / r.denom)
+
+def to_str(r):
+    print()
+
 
 
 

@@ -5,17 +5,17 @@ data_assert_str = []
 for i in range(1000):
     data_assert_str.append('a' * random.randint(1, 100))
 
-if sort.insertion_sort(data_assert_str, sort.comparator) == sorted(data_assert_str):
+if sort.insertion_sort(data_assert_str, sort.comparators["by_abs"]) == sorted(data_assert_str):
     print('true')
 
 data_assert_float = [random.uniform(0, 10) for _ in range(1000)]
-if sort.insertion_sort(data_assert_float, sort.comparator) == sorted(data_assert_float):
+if sort.insertion_sort(data_assert_float, sort.comparators) == sorted(data_assert_float):
     print('true')
 
 data_assert_int = []
 for i in range(1000):
     data_assert_int.append(random.randint(1, 100))
-if sort.insertion_sort(data_assert_int, sort.comparator) == sorted(data_assert_int):
+if sort.insertion_sort(data_assert_int, sort.comparators) == sorted(data_assert_int):
     print('true')
 
 

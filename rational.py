@@ -61,7 +61,12 @@ def to_float(r):
     return float(r.numer / r.denom)
 
 def to_str(r):
-    print()
+    s = create(r.numer, r.denom)
+    print(f'{s.numer}/{s.denom}')
+r = create(num, den)
+to_str(r)
+
+
 
 
 

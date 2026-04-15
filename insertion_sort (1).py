@@ -25,7 +25,7 @@ def comparator_float(a, b):
         return -1
 
 def comparator_str(a, b):
-    if len(a) > len(b):
+    if len(a) > len(b)
         return 1
     elif len(a) < len(b):
         return -1
